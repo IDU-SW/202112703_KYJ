@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+<h1>coins</h1>
+<ul id="coins">
+</ul>
+<div>
+   <button onclick="getCoins()">Get 요청</button>
+</div>
+<script>
+   let name = [];
+   let simbol = [];
+    function getCoins() {
+       $.ajax({
+          url : '/coin_info',
+          type : 'get',
+          success : function(data) {
+            let coin_info = data.data
+            for(let i in coin_info) {
+               name.push(coin_info[i].name);
+               simbol.push(coin_info[i].simbol)
+            }
+            let temp = '';
+            for(let i in name) {
+               temp += '<div>이름' + name[i] + '심볼' + simbol[i] + '</div>';
+            }
+            $('#coins').append(temp)
+            }
+       });
+
+    }
+
+ </script>
+</body>
+</html>

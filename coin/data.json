@@ -1,0 +1,18 @@
+  
+[
+  {
+      "id":0,
+      "name": "비트코인",
+      "simbol": "BTC"
+  },
+  {
+      "id":1,
+      "name": "이더리움",
+      "simbol": "ETH"
+  },
+  {
+      "id": 2,
+      "name": "도지코인",
+      "simbol": "DOGE"
+  }
+]
