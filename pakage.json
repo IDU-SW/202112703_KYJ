@@ -1,0 +1,19 @@
+{
+  "name": "ttttt",
+  "version": "1.0.0",
+  "description": "202112703 \r 김영재",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://geniusK97:genius970728#@github.com/IDU-SW/202112703_KYJ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1"
+  }
+}
